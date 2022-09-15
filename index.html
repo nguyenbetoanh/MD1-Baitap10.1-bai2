@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="ChuyenDoiDo.js"></script>
+</head>
+<body>
+<h1> Temperature</h1>
+<h1 id="ht1"></h1>
+<h2 id="ht2"></h2>
+<!--<input type="text" id="nhap">-->
+<!--<button onclick="bam()">bam</button>-->
+<script>
+    // function bam() {
+    //     let doCC = document.getElementById('nhap').value
+    //     let doC = doCC;
+    //     let doC=25
+    //     let doK = this.doC + 273;
+    //     let doF = 9 / 5 * doC + 32;
+    //     let nhietDo = new ChuyenDoiDo(doF, doC, doK)
+        let nhietDo = new ChuyenDoiDo(9 / 5 * this.doC + 32, 25, this.doC + 273)
+        F = nhietDo.getDoF()
+        K = nhietDo.getDoK()
+        document.getElementById('ht1').innerHTML = ("độ F là : " + F)
+        document.getElementById('ht2').innerHTML = ("độ K là : " + K)
+    // }
+</script>
+</body>
+</html>
